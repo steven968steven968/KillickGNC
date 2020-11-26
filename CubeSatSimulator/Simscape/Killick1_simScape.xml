@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="06/25/19||23:17:22" using="Simscape Multibody Link Version 5.1" from="SolidWorks 26.3.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Killick1_simScape" uid="Killick1_simScape" version="128">
+<AssemblyFile name="Killick1_simScape.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="body_part_acis-1" uid="body_part_acis-1" grounded="true" entityUid="body_part_acis*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel_part_acis-1" uid="wheel_part_acis-1" entityUid="wheel_part_acis*:*Default">
+<Transform>
+<Rotation>0.57922796533958321 0.74074357212040731 0.34028506363175193 0.57922796533957577 -0.66772920303875072 0.46758173144147741 0.57357643635102529 -0.073733789889938603 -0.81582681979162985</Rotation>
+<Translation>0.025688904739261643 0.025688904739258604 -0.052061741981040605</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel_part_acis-2" uid="wheel_part_acis-2" entityUid="wheel_part_acis*:*Default">
+<Transform>
+<Rotation>-0.57922796533955656 0.24623034693876805 0.77708788461473999 0.57922796533958587 -0.54644173063182067 0.60489370900404005 0.57357643635104205 0.80048238660854665 0.17389082894829261</Rotation>
+<Translation>-0.025688904739263052 0.025688904739259073 -0.052061741981039925</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel_part_acis-4" uid="wheel_part_acis-4" entityUid="wheel_part_acis*:*Default">
+<Transform>
+<Rotation>0.57922796533957321 -0.78512791006290117 0.21924673089658375 -0.57922796533956944 -0.58566151313744175 -0.56700578145036995 0.57357643635104194 0.20143176728069226 -0.79399956850933884</Rotation>
+<Translation>0.025688904739261269 -0.025688904739266154 -0.052061741981039925</Translation>
+</Transform>
+</Instance>
+<Instance name="wheel_part_acis-3" uid="wheel_part_acis-3" entityUid="wheel_part_acis*:*Default">
+<Transform>
+<Rotation>-0.579227965339562 -0.56560295120734894 0.58701641012336991 -0.57922796533956411 -0.22112453834894888 -0.78460111057055792 0.57357643635105859 -0.79447922573563956 -0.19953153018337388</Rotation>
+<Translation>-0.025688904739263302 -0.025688904739265911 -0.052061741981039134</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>body_part_acis-1</Uid>
+</InstancePath>
+<Position>0.027238339546545001 0.027238339546541951 -0.050527425013801704</Position>
+<Axis>0.5792279653395831 0.5792279653395751 0.57357643635102606</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel_part_acis-1</Uid>
+</InstancePath>
+<Position>0.0054732538492689616 0 0</Position>
+<Axis>-1 3.1918911957973251e-16 4.9960036108132044e-16</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>body_part_acis-1</Uid>
+</InstancePath>
+<Position>0.025688904739261602 0.025688904739258601 -0.052061741981040702</Position>
+<Axis>0.5792279653395831 0.5792279653395751 0.57357643635102606</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel_part_acis-1</Uid>
+</InstancePath>
+<Position>-1.1102230246251565e-16 0 0</Position>
+<Axis>-1 0 4.9960036108132044e-16</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>body_part_acis-1</Uid>
+</InstancePath>
+<Position>-0.02723833954654625 0.027238339546542398 -0.050527425013801003</Position>
+<Axis>-0.57922796533955689 0.57922796533958587 0.57357643635104183</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel_part_acis-2</Uid>
+</InstancePath>
+<Position>0.0054732538492689581 0 0</Position>
+<Axis>-0.99999999999999989 2.2204460492503131e-16 5.4123372450476381e-16</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>body_part_acis-1</Uid>
+</InstancePath>
+<Position>-0.025688904739262951 0.025688904739259052 -0.052061741981040001</Position>
+<Axis>-0.57922796533955689 0.57922796533958587 0.57357643635104183</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel_part_acis-2</Uid>
+</InstancePath>
+<Position>-1.1449174941446927e-16 0 0</Position>
+<Axis>-1.0000000000000002 1.1102230246251565e-16 3.8857805861880479e-16</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>body_part_acis-1</Uid>
+</InstancePath>
+<Position>-0.027238339546546499 -0.027238339546549199 -0.050527425013800198</Position>
+<Axis>-0.57922796533956222 -0.57922796533956322 0.57357643635105915</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel_part_acis-3</Uid>
+</InstancePath>
+<Position>0.0054732538492689616 0 0</Position>
+<Axis>-1.0000000000000002 2.2204460492503131e-16 5.6898930012039273e-16</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>body_part_acis-1</Uid>
+</InstancePath>
+<Position>-0.025688904739263201 -0.025688904739265852 -0.0520617419810393</Position>
+<Axis>-0.57922796533956289 -0.57922796533956289 0.57357643635105882</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel_part_acis-3</Uid>
+</InstancePath>
+<Position>-1.1102230246251565e-16 0 0</Position>
+<Axis>-1 1.1102230246251565e-16 4.9960036108132044e-16</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric4">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>body_part_acis-1</Uid>
+</InstancePath>
+<Position>0.02723833954654455 -0.027238339546549448 -0.050527425013801003</Position>
+<Axis>0.57922796533957321 -0.57922796533956922 0.57357643635104216</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>wheel_part_acis-4</Uid>
+</InstancePath>
+<Position>0.005473253849268965 0 0</Position>
+<Axis>-1.0000000000000002 1.5265566588595902e-16 6.106226635438361e-16</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>body_part_acis-1</Uid>
+</InstancePath>
+<Position>0.025688904739261151 -0.02568890473926615 -0.052061741981040001</Position>
+<Axis>0.57922796533957321 -0.57922796533956922 0.57357643635104216</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>wheel_part_acis-4</Uid>
+</InstancePath>
+<Position>-1.1796119636642288e-16 0 0</Position>
+<Axis>-1.0000000000000002 0 4.4408920985006262e-16</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="body_part_acis" uid="body_part_acis*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="body_part_acis.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.60800410888653389</Mass>
+<CenterOfMass>0.013153872808257989 0.00024859601829025301 0.0086173954257348952</CenterOfMass>
+<Inertia>0.0044143513824105463 0.0033367361189191114 0.0028497745334093404 -1.701456097665895e-06 9.6057442905256706e-05 5.7290718291135796e-07</Inertia>
+</MassProperties>
+<GeometryFile name="body_part_acis_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="wheel_part_acis" uid="wheel_part_acis*:*Default" version="185">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="wheel_part_acis.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.092528158690945092</Mass>
+<CenterOfMass>-0.0047301992759464116 0 0</CenterOfMass>
+<Inertia>3.762824052068012e-05 1.9934156121176556e-05 1.9934156120944595e-05 -1.6667474298312447e-15 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="wheel_part_acis_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
